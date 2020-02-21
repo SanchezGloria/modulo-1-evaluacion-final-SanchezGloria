@@ -1,1 +1,28 @@
+.page__footer {
+  background: #304268;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__button {
+    height: 45px;
+    width: 45px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    background: $color-primary;
+    border-radius: 22.5px;
+    position: relative;
+    top: -20px;
+  }
+  &__navigation--products,
+  &__navigation--media {
+    list-style-type: none;
+  }
 
+  &__navigation--products,
+  &__navigation--media li {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-family: $font-family-content;
+  }
+}
