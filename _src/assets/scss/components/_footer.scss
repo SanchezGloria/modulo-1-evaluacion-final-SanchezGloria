@@ -14,15 +14,31 @@
     position: relative;
     top: -20px;
   }
+
   &__navigation--products,
   &__navigation--media {
     list-style-type: none;
+    margin-bottom: 30px;
   }
 
   &__navigation--products,
   &__navigation--media li {
     text-transform: uppercase;
-    color: $color-primary;
+    font-size: 16px;
     font-family: $font-family-content;
+    line-height: 30px;
+  }
+  & a {
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &__credits {
+    color: $color-primary;
+    font-size: 14px;
+    font-family: $font-family-content;
+    margin-bottom: 45px;
+    .heart {
+      color: $color-button;
+    }
   }
 }
