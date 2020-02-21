@@ -42,3 +42,23 @@
     }
   }
 }
+@media all and (min-width: 768px) {
+  .page__footer__wrapper {
+    width: 100%;
+    padding-left: 39px;
+    padding-right: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page__footer__navigation--media {
+    order: 2;
+  }
+  .page__footer__navigation--products {
+    order: 1;
+  }
+
+  .page__footer__credits {
+    order: 3;
+  }
+}
