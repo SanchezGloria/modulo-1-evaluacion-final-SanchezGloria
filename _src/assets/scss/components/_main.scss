@@ -1,0 +1,31 @@
+.page__main {
+  &__intro {
+    font-family: $font-family-content;
+    color: #8ccbea;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  &__title {
+    font-size: 24px;
+    font-family: $font-family-title;
+    text-transform: capitalize;
+    width: 290px;
+  }
+  &__content {
+    margin: 15px 0 30px;
+    font-family: $font-family-content;
+    color: #4a4a4a;
+    text-align: justify;
+  }
+  &__button {
+    @include btn-default();
+    border: 2px solid $color-button;
+    width: 76px;
+    margin-bottom: 45px;
+
+    & a {
+      text-decoration: none;
+      color: $color-button;
+    }
+  }
+}

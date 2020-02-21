@@ -1,4 +1,8 @@
 @import "core/_variables";
 @import "core/reset";
+@import "core/mixins";
 @import "components/header";
+@import "components/container";
+@import "components/main";
+@import "components/section";
 @import "components/footer";
