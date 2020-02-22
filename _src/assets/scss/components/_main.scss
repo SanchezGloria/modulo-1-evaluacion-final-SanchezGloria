@@ -42,10 +42,20 @@
     @include btn-default();
     border: 2px solid $color-button;
     width: 76px;
-
-    & a {
-      text-decoration: none;
-      color: $color-button;
+    transition: border-radius 1s cubic-bezier(0, 1.56, 0.61, -0.39), transform 1s cubic-bezier(0, 1.56, 0.61, -0.39);
+    &:hover {
+      box-shadow: 10px 10px 30px 0px rgba(125, 122, 150, 1);
+      border-radius: 0%;
+      border: 1px;
     }
+    &:active {
+      border-radius: none;
+      transform: scale(1.2);
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-button;
   }
 }
