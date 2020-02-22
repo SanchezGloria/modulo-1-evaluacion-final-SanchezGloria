@@ -13,6 +13,17 @@
     border-radius: 22.5px;
     position: relative;
     top: -20px;
+    &--arrow:hover {
+      animation: arrow 6s infinite;
+      @keyframes arrow {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 
   &__navigation--products--list,
@@ -21,27 +32,64 @@
     margin-bottom: 30px;
   }
 
-  &__navigation--products,
+  &__navigation--products li,
   &__navigation--media li {
     text-transform: uppercase;
     font-size: 16px;
     font-family: $font-family-content;
     line-height: 30px;
+    &:hover {
+      border-radius: 22.5px;
+      background: #3a4c74;
+      &:active {
+        border: 2px solid $color-button;
+      }
+    }
   }
   & a {
     color: $color-primary;
     text-decoration: none;
+    padding: 10px;
   }
   &__credits {
     color: $color-primary;
     font-size: 14px;
     font-family: $font-family-content;
     margin-bottom: 45px;
-    .heart {
-      color: $color-button;
+  }
+}
+.page__footer__credits {
+  .heart {
+    color: $color-button;
+  }
+  animation: beat 1s infinite;
+  @keyframes beat {
+    from {
+      transform: none;
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    to {
+      transform: none;
+    }
+  }
+  &:hover .heart {
+    animation: heart 0.5s infinite;
+    @keyframes heart {
+      from {
+        color: $color-button;
+      }
+      50% {
+        color: #304268;
+      }
+      to {
+        color: red;
+      }
     }
   }
 }
+
 @media all and (min-width: 768px) {
   .page__footer__wrapper {
     width: 100%;
