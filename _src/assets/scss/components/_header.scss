@@ -32,12 +32,31 @@
     width: 290px;
     height: 110px;
     margin-bottom: 10px;
+    line-height: 55px;
+    @media all and (min-width: 768px) {
+      width: 730px;
+      height: 264px;
+      font-size: 80px;
+      line-height: 106px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 730px;
+      height: 212px;
+      font-size: 100px;
+      line-height: 132px;
+    }
   }
   &__motto {
     font-family: $font-family-content;
     color: $color-primary;
     font-size: 16px;
     margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-top: 45px;
+    }
   }
   &__button {
     width: 45px;
