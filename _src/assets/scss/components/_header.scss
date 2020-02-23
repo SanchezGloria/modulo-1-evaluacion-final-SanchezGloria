@@ -6,6 +6,9 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  // MENU NAVEGACION
+
   &__navigation {
     height: 44px;
     width: 44px;
@@ -17,6 +20,8 @@
     justify-content: center;
     align-items: center;
   }
+
+  // ESTILOS DEL WRAPPER Y CONTENIDO
 
   &__wrapper {
     display: flex;

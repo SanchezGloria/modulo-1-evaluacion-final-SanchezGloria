@@ -1,3 +1,5 @@
+// ESTILO GRID
+
 .page__section {
   background: #eff9ff;
   height: 624px;
@@ -5,6 +7,9 @@
   grid-template-columns: 1fr 184px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
+
+  // ESTILO TITULO GRID
+
   &__title {
     font-family: $font-family-title;
     font-size: 24px;
@@ -14,6 +19,9 @@
     justify-content: center;
     align-items: flex-end;
   }
+
+  // ESTILO CONTENEDOR DE CADA SECCION Y CONTENIDO
+
   &__info {
     grid-column: 2/3;
     text-align: center;
@@ -59,7 +67,7 @@
 
     &__title {
       font-size: 26px;
-      align-items: flex-end;
+      // align-items: flex-end;
     }
 
     &__info {
