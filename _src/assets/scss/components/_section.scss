@@ -38,17 +38,14 @@
     margin-bottom: 60px;
     background: $color-button;
     transition: letter-spacing 2s cubic-bezier(0, 1.56, 0.61, -0.39);
+    color: $color-primary;
+    font-family: $font-family-content;
     &:hover {
       background-image: linear-gradient(to right, #f26002 0%, #304268 100%);
       box-shadow: 10px 10px 30px 0px rgba(125, 122, 150, 1);
     }
     &:active {
       letter-spacing: 5px;
-    }
-    & a {
-      text-decoration: none;
-      color: $color-primary;
-      font-family: $font-family-content;
     }
   }
 }
