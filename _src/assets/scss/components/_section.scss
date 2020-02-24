@@ -4,7 +4,7 @@
   background: #eff9ff;
   height: 624px;
   display: grid;
-  grid-template-columns: 1fr 184px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
 
@@ -43,6 +43,7 @@
   &__button {
     @include btn-default();
     grid-column: 2/3;
+    width: 184px;
     margin-bottom: 60px;
     background: $color-button;
     transition: letter-spacing 2s cubic-bezier(0, 1.56, 0.61, -0.39);
@@ -57,17 +58,24 @@
     }
   }
 }
+
+// WRAPPER BUTTON
+
+.page__section_wrapper_button {
+  grid-column: 2/3;
+  text-align: center;
+}
+
 @media all and (min-width: 768px) {
   .page__section {
     height: 397px;
-    grid-template-columns: 1fr 213px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 56px;
     padding-left: 40px;
     padding-right: 40px;
 
     &__title {
       font-size: 26px;
-      // align-items: flex-end;
     }
 
     &__info {
@@ -80,7 +88,7 @@
       }
     }
     &__button {
-      grid-column: 2/3;
+      width: 210px;
     }
   }
 }
@@ -93,6 +101,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     &__title {
       font-size: 32px;
+    }
+    &__button {
+      width: 255px;
     }
   }
 }

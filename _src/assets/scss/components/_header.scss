@@ -2,6 +2,7 @@
   background-image: url(../images/cover.jpg);
   height: 100vh;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -19,6 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:active {
+      border: 2px solid #304268;
+    }
+    &--hamburger {
+      padding: 10px;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
 
   // ESTILOS DEL WRAPPER Y CONTENIDO
@@ -40,39 +50,42 @@
     margin-bottom: 10px;
     line-height: 55px;
     @media all and (min-width: 768px) {
-      width: 730px;
-      height: 264px;
+      width: 690px;
+      height: 212px;
       font-size: 80px;
       line-height: 106px;
     }
     @media all and (min-width: 1200px) {
       width: 730px;
-      height: 212px;
+      height: 264px;
       font-size: 100px;
       line-height: 132px;
     }
   }
   &__motto {
     font-family: $font-family-content;
+    font-weight: lighter;
     color: $color-primary;
     font-size: 16px;
     margin-bottom: 45px;
     @media all and (min-width: 768px) {
       font-size: 24px;
-    }
-    @media all and (min-width: 1200px) {
-      margin-top: 45px;
+      width: 360px;
+      margin-bottom: 30px;
     }
   }
   &__button {
     width: 45px;
     height: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 53px;
     border-radius: 22.5px;
     background: $color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media all and (min-width: 1200px) {
+      margin-bottom: 13px;
+    }
     &:active {
       box-shadow: 10px 10px 30px 0px rgba(125, 122, 150, 1);
     }
